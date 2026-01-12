@@ -1,38 +1,15 @@
-#root {
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.page-content {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
-body{
-  padding: 10px;
-}
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.Hargita{
+  margin-top: 56px; 
 }
 
 .card {
@@ -43,11 +20,40 @@ body{
   color: #888;
 }
 .carousel-item img {
-  height: 400px;
+  height: 500px;
   object-fit: cover;
 }
 
 .carousel-wrapper {
- width: 100vw;
- margin-left: calc(-50vw + 50%);
+  max-width: 70%;
+  margin: 2rem auto 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.product-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: none;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-price {
+  font-size: 1.1rem;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.sale-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
 }
